@@ -1,6 +1,7 @@
-# SignUp-Form
-This is a sign-up form based on a CSS exercise by The Odin Project.
+# **The Odin Project**
+___
+## Project: Sign-up Form
+___
 
-Skills displayed
-HTML
-CSS
+* Sign-up Form created with HTML & CSS
+* Made form more responsive to mobile/tablet screens using media querys
