@@ -4,4 +4,4 @@ ___
 ___
 
 * Sign-up Form created with HTML & CSS
-* Made form more responsive to mobile/tablet screens using media querys
+* Made form more responsive for mobile & tablet screens using media queries
