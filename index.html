@@ -19,7 +19,7 @@
   <div class="main">
     <div class="Lcontent">
       <div class="logo">
-        <img src="imgs/odinL.png" alt="Space Ship Logo" width="100" height="150">
+        <img src="imgs/odinL.png" alt="Space Ship Logo" width="100" height="150" class="odinLogo">
         <h1 class="head1">Space Adventure</h1>
       </div>
     </div>
@@ -28,30 +28,39 @@
       <p>This is not a real service online service but it could be the place to sign-up to be the first group of people to travel to a new Galaxy!<br><br>Sign up <em>now</em> and make your cosmo dreams come true!<br><br></p>
       <form action="#">
         <h1 class="formHead">Let's do this!</h1>
-        <div class="input">
-          <label for="firstName">First Name:</label>
-          <input type="text" id="firstName" name="first_name" placeholder="John">
-        </div>
-        <div class="input">
-          <label for="lastName">Last Name:</label>
-          <input type="text" id="LastName" name="last_name" placeholder="Smith">
-        </div>
-        <div class="input">
-          <label for="userEmail">Email Address:</label>
-          <input type="email" id="userEmail" name="email" placeholder="you@example.com">
-        </div>
-        <div class="input">
-          <label for="phoneNum">Phone Number:</label>
-          <input type="number" id="phoneNum"  name="phone_num">
-        </div>
-        <div class="input">
-          <label for="userPass">Password:</label>
-          <input type="password" id="user_pass" name="password">
-        </div>
-        <div class="input"> 
-          <label for="userPassC">Confirm Password:</label>
-          <input type="password" id="user_passC" name="passwordC">
-        </div>
+        
+        <fieldset>
+          <div class="input">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="first_name" placeholder="John">
+          </div>
+          <div class="input">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="LastName" name="last_name" placeholder="Smith">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="input">
+            <label for="userEmail">Email Address:</label>
+            <input type="email" id="userEmail" name="email" placeholder="you@example.com">
+          </div>
+          <div class="input">
+            <label for="phoneNum">Phone Number:</label>
+            <input type="number" id="phoneNum"  name="phone_num">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="input">
+            <label for="userPass">Password:</label>
+            <input type="password" id="user_pass" name="password">
+          </div>
+          <div class="input">
+            <label for="userPassC">Confirm Password:</label>
+            <input type="password" id="user_passC" name="passwordC">
+          </div>
+        </fieldset>
       </form>
       <button type="button" class="btn1">Create Account</button>
       <p class="logIn">Already have an account? <a href="#">Log in</a></p>
