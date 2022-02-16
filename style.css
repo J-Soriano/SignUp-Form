@@ -13,6 +13,7 @@ html {
 
 body{
   font-family: 'Open Sans', sans-serif;
+  background-color: black;
 }
 
 .main {
@@ -38,9 +39,9 @@ p {
 .Lcontent {
   background-image: url("imgs/space.jpg");
   width: 40vw;
+  height: auto;
   background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-size: fill;
 }
 .logo {
   display: flex;
@@ -48,7 +49,7 @@ p {
   align-items: center;
   margin: 15vh 0px 0px 0px;
   margin-top: 15vh;
-  background-color: rgba(0, 0, 0, 0.3) ;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .head1{
@@ -99,12 +100,17 @@ input[type=text],[type=email],[type=number],[type=password]{
   border-radius: 4px;
 }
 
-.input{
+fieldset{
   display: flex;
-  
-  width: 40%;
+  border: none;
 }
 
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 10px 6vw 10px 0;
+}
 
 .btn1 {
   background-color: rgb(27, 24, 201);
@@ -133,3 +139,72 @@ a{
 a:hover{
   color: rgb(4, 0, 255);
 }
+
+/* Media */
+
+@media only screen and (max-width: 1025px)  {
+  .main{
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+      overflow-y:scroll;
+  }
+  .Lcontent{
+      width: 100vw;
+      height: auto;
+      margin: 15px;
+      display: flex;
+      background-size: 100vw;
+  }
+  .head1{
+    font-size: 2rem;
+  }
+  .logo{
+      width: 100vw;
+  }
+  .Rcontent{
+      width: auto;
+      height: auto;
+  }
+  p{
+      width: auto;
+      margin-top: 30px;
+  }
+  
+  form{
+      flex-flow: column nowrap;
+      align-items: center;
+  }
+  .input{
+      width: 20vw;
+      margin: 0px 25px;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  input{
+      height: auto;
+      width: 25vw;
+  }
+  
+  .btn1{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+      width: auto;
+  }
+  button{
+      margin-bottom: 0px;
+      width: 60vw;
+      padding: 10px 5px;
+  }
+
+}
+
+@media only screen and (max-width:450px){
+  .odinLogo{
+    display: none;
+  }
+}
+
+
